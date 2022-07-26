@@ -1,7 +1,6 @@
 import 'package:events_1_hack/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,8 +15,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final storage = FirebaseFirestore.instance;
-    print(storage.app.hashCode);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
